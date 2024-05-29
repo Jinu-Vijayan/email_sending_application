@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+    <link rel="styleSheet" href = "./style.css">
+</head>
+<body>
+    <header>
+        <h1>Send Email</h1>
+    </header>
+    <main>
+        <form action="/sendMail" method="post">
+            <input type="text" id = "from" name = "from" placeholder="from address"/>
+            <input type="text" id = "to" name="to" placeholder="to address"/>
+            <input type="text" id = "subject" name="subject" placeholder="enter the subject of email"/>
+            <textarea id = "message" name="message" placeholder="enter the content of the email"></textarea>
+            <button type="submit" >Submit</button>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
